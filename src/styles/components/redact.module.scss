@@ -1,0 +1,49 @@
+
+.modal-overlay {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: auto;
+  text-align: center;
+}
+
+
+.modal-content {
+  margin-top: 16px;
+}
+
+.modal-close{
+  display: flex;
+  float: right ;
+}
+.Card__button{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;  
+}
+.success-message{
+ text-align: center;
+}
+.modal-contentmess {
+  display: flex;
+}
+.success-message {
+  flex-grow: 1;
+  max-height: 100px; /* Замените это значение на желаемую максимальную высоту */
+  overflow: hidden;
+  margin: 15px 15px;
+  font-size: large;
+}

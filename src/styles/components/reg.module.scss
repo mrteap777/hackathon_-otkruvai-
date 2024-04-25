@@ -1,0 +1,36 @@
+.Reg__Window{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    width: 457px;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    padding: 15px;
+    border-color: black;
+    background: rgba(123, 94, 129, 0.167);
+    box-shadow: 0 0 15px rgba(92, 69, 97, 0.4);
+    border-radius: 15px;
+    &-h1{
+        margin-bottom: 100px;
+    }
+    &-input{
+        margin-bottom: 110px;
+    }
+    &-close{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px 20px;
+    }
+}
+.setreg{
+    color: blue;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,59 @@
+.Card{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    width: 1000px;
+    height: 450px;
+    padding: 20px;
+    text-align: left;
+    padding-left: 50px;
+    border-radius: 30px;
+    margin: 20px 0px 100px 0;
+    position: relative;
+    border: 3px solid black; /* Обводка карточки */
+    border-color: #186386;/* Цвет обводки */
+    font-size: 21px;
+
+    &__Skills{
+        &-list{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &__button-container {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 40px); /* Учитываем отступы контейнера */
+        padding: 0 20px; /* Отступы для кнопок */
+        cursor:default;
+    }
+
+    &__button {
+        /* Стили кнопок */
+        padding: 10px 20px;
+        border: none;
+
+        color: #ffffff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}
+
+.Card:hover{
+    scale: 1.1;
+    transition: 0.2s;
+}
+.Card:not(:hover){
+    scale: 1;
+    transition: 0.2s;
+}
+.Card:not(:last-child) {
+    margin-bottom: 0;
+  }

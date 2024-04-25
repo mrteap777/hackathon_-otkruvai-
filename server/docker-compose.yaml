@@ -1,0 +1,23 @@
+version: '3'
+services:
+  # Сервис для вашего сервера приложений
+  app:
+    image: node:latest
+    working_dir: /app
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    command: npm start:dev  # Замените на вашу команду запуска приложения
+
+  # Сервис для базы данных PostgreSQL
+  db:
+    image: postgres:latest
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: hackathon
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
